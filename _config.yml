@@ -1,0 +1,10 @@
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "" # the subpath of your site, e.g. /blog
+title: "Michael Lazebny" # the name of your site, e.g. ACME Corp.
+
+sass:
+  implementation: sassc
+  style: compact
+  sass_dir: _sass
+  line_comments: true
+  sourcemap: always

@@ -1,0 +1,18 @@
+.coming-soon__title {
+    font-weight: 600;
+    font-family: $rubik;
+    margin: 0px;
+}
+
+.coming-soon__description {
+    font-family: $rubik;
+    font-weight: 300;
+    margin: 0px;
+}
+
+.coming-soon__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

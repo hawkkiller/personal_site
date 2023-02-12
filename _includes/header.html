@@ -1,0 +1,10 @@
+<div class="header">
+    <h3>{{ site.title }}</h3>
+    <nav class="header__nav">
+        {% for item in site.data.navigation.sections %}
+        <a class="header__nav__section{%if include.tab == item.title %} header__nav__section__active {% endif %}"
+            href="{{ item.url }}">{{
+            item.title }}</a>
+        {% endfor %}
+    </nav>
+</div>
