@@ -8,3 +8,5 @@ sass:
   sass_dir: _sass
   line_comments: true
   sourcemap: always
+
+permalink: pretty 
