@@ -1,0 +1,34 @@
+.site_main_menu_sidebar_nav_section.active {
+    font-weight: 800;
+}
+
+.site_main_menu_sidebar_nav_section {
+    color: var(--md-sys-color-on-primary-container);
+    padding: 10px;
+    @include title-large();
+    font-weight: 500;
+}
+
+.site_main_menu_sidebar_title_container {
+    padding: 20px;
+}
+
+.site_main_menu_sidebar_title {
+    color: var(--md-sys-color-on-primary-container);
+    @include headline-medium();
+    font-weight: 800;
+}
+
+.site_main_menu_sidebar_nav {
+    display: flex;
+    flex-direction: column;
+}
+
+.site_main_menu_sidebar {
+    background-color: var(--md-sys-color-primary-container);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+}
