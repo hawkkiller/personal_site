@@ -1,0 +1,21 @@
+baseURL = 'http://example.org/'
+languageCode = 'en-us'
+title = 'Michael Lazebny'
+hello = 'Hello'
+
+[menu]
+[[menu.main]]
+  name = 'HOME'
+  url = '/'
+  identifier = 'home'
+  weight = 1
+[[menu.main]]
+  name = 'ABOUT'
+  url = '/about'
+  identifier = 'about'
+  weight = 2
+[[menu.main]]
+  name = 'CONTACT'
+  url = '/contact'
+  identifier = 'contact'
+  weight = 3
