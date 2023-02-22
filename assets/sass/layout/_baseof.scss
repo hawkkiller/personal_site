@@ -1,3 +1,10 @@
-.body-container {
+body,
+html,
+.body-row {
+    height: 100%;
+    width: 100%;
+}
+
+.body-row {
     display: flex;
 }

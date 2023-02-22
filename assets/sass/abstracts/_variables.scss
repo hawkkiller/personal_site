@@ -1,7 +1,8 @@
 $fontFamily: system-ui;
 
 $breakpoints: (
-    'small': (min-width: 600px),
-    'medium': (min-width: 900px),
-    'large': (min-width: 1200px),
+    'small': (min-width: 300px),
+    'medium': (min-width: 600px),
+    'large': (min-width: 900px),
+    'huge': (min-width: 1200px),
 );
