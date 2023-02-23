@@ -3,7 +3,7 @@
 
 <head>
     {{ $sass := resources.Get "sass/main.scss" }}
-    {{ $options := dict "outputStyle" "compressed" }}
+    {{ $options := dict "outputStyle" "compressed" "transpiler" "dartsass" }}
     {{ $style := $sass | resources.ToCSS | resources.Fingerprint }}
     <link rel="stylesheet" href="{{ $style.Permalink }}" integrity="{{ $style.Data.Integrity }}">
     <meta charset="utf-8">
