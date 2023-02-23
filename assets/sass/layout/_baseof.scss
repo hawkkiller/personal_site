@@ -7,4 +7,9 @@ html,
 
 .body-row {
     display: flex;
+    flex-direction: column;
+}
+
+body {
+    background-color: var(--md-sys-color-background);
 }

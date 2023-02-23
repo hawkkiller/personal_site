@@ -1,21 +1,22 @@
 baseURL = 'http://example.org/'
 languageCode = 'en-us'
-title = 'Michael Lazebny'
-hello = 'Hello'
+title = 'portfolio'
+[params]
+  author = 'Michael Lazebny'
 
 [menu]
 [[menu.main]]
-  name = 'HOME'
+  name = 'Home'
   url = '/'
   identifier = 'home'
   weight = 1
 [[menu.main]]
-  name = 'ABOUT'
+  name = 'About'
   url = '/about'
   identifier = 'about'
   weight = 2
 [[menu.main]]
-  name = 'CONTACT'
+  name = 'Contact'
   url = '/contact'
   identifier = 'contact'
   weight = 3

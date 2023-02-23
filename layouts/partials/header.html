@@ -1,0 +1,19 @@
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+</script>
+
+<header class="site_main_menu_header">
+    <h1>{{ $.Site.Params.Author }}</h1>
+    <nav class="site_main_menu_header_nav">
+        {{ range $index, $element := .Site.Menus.main }}
+        <a class="site_main_menu_header_nav_section {{ if eq $.Params.ActiveTab .Identifier }}active{{ end }}"
+            href="{{ .URL }}">{{ .Name }}</a>
+        {{ end }}
+    </nav>
+</header>
