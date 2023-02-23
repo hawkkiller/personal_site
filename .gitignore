@@ -1,2 +1,2 @@
-.jecyll-cache/
-_site/
+.hugo_build.lock
+resources/

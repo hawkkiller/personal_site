@@ -1,7 +1,11 @@
-$fontFamily: system-ui;
+$fontFamily: -apple-system, BlinkMacSystemFont,
+    "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell",
+    "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
 
 $breakpoints: (
-    'small': (min-width: 600px),
-    'medium': (min-width: 900px),
-    'large': (min-width: 1200px),
+    'small': (min-width: 300px),
+    'medium': (min-width: 600px),
+    'large': (min-width: 900px),
+    'huge': (min-width: 1200px),
 );

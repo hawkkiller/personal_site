@@ -1,0 +1,17 @@
+.coming-soon-container {
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: var(--md-sys-color-on-background);
+
+    h1 {
+        @include display-small()
+    }
+
+    p {
+        @include body-large()
+    }
+}
