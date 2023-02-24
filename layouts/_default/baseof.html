@@ -7,7 +7,7 @@
     {{ $style := $sass | resources.ToCSS | resources.Fingerprint }}
     <link rel="stylesheet" href="{{ $style.Permalink }}" integrity="{{ $style.Data.Integrity }}">
     <meta charset="utf-8">
-    <meta name="viewport" content="width=100%,height=100% initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>
         {{ with .Title }} {{ . }} {{ end }}
     </title>
