@@ -1,6 +1,7 @@
 baseURL = 'http://example.org/'
 languageCode = 'en-us'
 title = 'portfolio'
+staticDir = ['static']
 [params]
   author = 'Michael Lazebny'
 
