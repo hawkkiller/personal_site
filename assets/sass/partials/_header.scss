@@ -2,8 +2,12 @@
 .site_main_menu_header {
     margin-top: 20px;
     position: sticky;
-    display: flex;
     width: 100%;
+    display: none;
+
+    @include respond-to('medium') {
+        display: flex;
+    }
 
     h1 {
         @include headline-medium();
