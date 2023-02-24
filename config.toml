@@ -1,6 +1,7 @@
 baseURL = 'https://themisha.dev'
 languageCode = 'en-us'
 title = 'portfolio'
+staticDir = ['static']
 [params]
   author = 'Michael Lazebny'
 
