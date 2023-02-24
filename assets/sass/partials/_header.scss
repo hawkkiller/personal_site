@@ -1,65 +1,41 @@
 /* header */
 .site_main_menu_header {
+    margin-top: 20px;
     position: sticky;
-    min-height: 48px;
     width: 100%;
-    display: flex;
-    align-items: center;
-    flex-direction: row;
+    display: none;
 
-    /* header title (author title) */
+    @include respond-to('medium') {
+        display: flex;
+    }
+
     h1 {
         @include headline-medium();
         font-weight: 900;
         color: var(--md-sys-color-on-background);
         text-align: center;
         flex: 1;
-
-        @include respond-to('medium') {
-            margin-left: 10px;
-        }
+        margin-left: 10px;
     }
+}
 
-    /* header menu button */
-    .header-menu-btn-container {
-        width: 48px;
-        height: 48px;
+/* sections nav container  */
+.site_main_menu_header_nav {
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    justify-content: end;
+    flex: 2;
+}
 
-        @include respond-to('medium') {
-            display: none;
-        }
+/* nav section destination */
+.site_main_menu_header_nav_section.active {
+    color: var(--md-sys-color-tertiary);
+}
 
-        .header-menu-btn {
-            color: var(--md-sys-color-on-background);
-            line-height: 48px;
-            display: block;
-            font-size: 24px;
-            flex: 1;
-            text-align: center;
-        }
-    }
-
-    /* sections nav container  */
-    .site_main_menu_header_nav {
-        display: none;
-        flex-direction: row;
-        flex: 2;
-        justify-content: end;
-
-        @include respond-to('medium') {
-            display: flex;
-        }
-
-        /* nav section destination */
-        .site_main_menu_header_nav_section.active {
-            color: var(--md-sys-color-tertiary);
-        }
-
-        .site_main_menu_header_nav_section {
-            @include headline-small();
-            margin-right: 30px;
-            font-weight: 700;
-            color: var(--md-sys-color-on-background);
-        }
-    }
+.site_main_menu_header_nav_section {
+    @include headline-small();
+    margin-right: 30px;
+    font-weight: 700;
+    color: var(--md-sys-color-on-background);
 }
