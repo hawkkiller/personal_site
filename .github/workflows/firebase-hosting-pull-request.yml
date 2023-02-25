@@ -48,9 +48,11 @@ jobs:
     runs-on: ubuntu-latest
     needs: build
     steps:
-      - name: Download artifact
-        uses: actions/download-pages-artifact@v1
-        
+      - name: Check filesystem
+        run: |
+          ls -la
+          ls -la public
+
       - name: Deploy to Firebase Hosting on PR
         uses: FirebaseExtended/action-hosting-deploy@v0
         with:
