@@ -2,12 +2,12 @@
 <html lang="en">
 
 <head>
-    {{ $sass := resources.Get "sass/main.scss" }}
-    {{ $options := dict "outputStyle" "compressed" "transpiler" "dartsass" }}
-    {{ $style := $sass | resources.ToCSS | resources.Fingerprint }}
-    <link rel="stylesheet" href="{{ $style.Permalink }}" integrity="{{ $style.Data.Integrity }}">
+    {{ $options := (dict "targetPath" "style.css" "outputStyle" "compressed" "enableSourceMap" (not hugo.IsProduction))
+    }}
+    {{ $style := resources.Get "styles/main.scss" | resources.ToCSS $options }}
+    <link rel="stylesheet" href="{{ $style.RelPermalink }}" integrity="{{ $style.Data.Integrity }}">
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,height=device-height initial-scale=1">
+    <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1">
     <title>
         {{ with .Title }} {{ . }} {{ end }}
     </title>
