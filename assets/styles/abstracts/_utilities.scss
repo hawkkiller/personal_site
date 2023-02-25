@@ -22,7 +22,6 @@
     --#{$title}-l: #{lightness($color)};
     --#{$title}-s: #{saturation($color)};
     --#{$title}-a: #{alpha($color)};
-    $title: $color !global;
 }
 
 @function color($title, $hue: 0deg, $lightness: 0%, $saturation: 0%, $alpha: 0) {

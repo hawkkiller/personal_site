@@ -1,6 +1,7 @@
 /* header */
 .site_main_menu_header {
     position: sticky;
+    margin-top: 10px;
     min-height: 48px;
     width: 100%;
     display: flex;
@@ -22,6 +23,7 @@
 
     /* header menu button */
     .header-menu-btn-container {
+        margin-left: 10px;
         width: 48px;
         height: 48px;
         cursor: pointer;
@@ -32,6 +34,7 @@
 
         &:hover {
             border-radius: 50%;
+            background-color: color(md-sys-color-on-background, $alpha: -0.95);
         }
 
         .header-menu-btn {
