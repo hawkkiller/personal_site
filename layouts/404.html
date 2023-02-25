@@ -1,0 +1,105 @@
+{{ define "main" }}
+<script>
+    document.addEventListener('keyup', (e) => {
+        window.location.href = '/';
+    });
+</script>
+<style>
+    body {
+        margin: 10px;
+        background-color: #000084;
+        color: #bbb;
+        font-family: 'more_perfect_dos_vgaregular', 'Courier New', monospace;
+        font-size: 14px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    @media (min-width: 600px) {
+        body {
+            font-size: 18px;
+        }
+    }
+
+    @media (min-width: 900px) {
+        body {
+            font-size: 24px;
+            font-weight: 400;
+        }
+    }
+
+    .notfound {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        background-color: #000084;
+    }
+
+    .centered {
+        text-align: center;
+    }
+
+    .inverted {
+        background-color: #bbb;
+        color: #000084;
+    }
+
+    .shadow {
+        background-color: #000;
+        color: #000084;
+    }
+
+    .blink {
+        animation: blinkingText .8s infinite;
+    }
+
+    @keyframes blinkingText {
+        0% {
+            opacity: 0;
+        }
+
+        49% {
+            opacity: 0;
+        }
+
+        50% {
+            opacity: 1;
+        }
+    }
+
+    /* Source TTF file from: http://laemeur.sdf.org/fonts/ */
+    /* converted to Webfont with: https://www.fontsquirrel.com/tools/webfont-generator */
+    @font-face {
+        font-family: 'more_perfect_dos_vgaregular';
+        src: url('fonts/dos-font.woff2') format('woff2');
+        font-weight: normal;
+        font-style: normal;
+    }
+</style>
+<div class="notfound">
+    <div class="centered"><span class="inverted">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;</div>
+    <div class="centered"><span class="inverted">&nbsp;4&nbsp;0&nbsp;4&nbsp;</span><span class="shadow">&nbsp;</span>
+    </div>
+    <div class="centered">
+        <span class="inverted">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </span>
+        <span class="shadow">&nbsp;
+        </span>
+    </div>
+    <div class="centered">&nbsp;<span class="shadow">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+    <div class="row">&nbsp;</div>
+    <div class="row">A fatal exception 404 has occurred at C0DE:ABAD1DEA in 0xC0DEBA5E.</div>
+    <div class="row">The current request will be terminated.</div>
+    <div class="row">&nbsp;</div>
+    <div class="row">* Press any key to return to the home page.</div>
+    <div class="row">* Press CTRL+ALT+DEL to restart your computer. You will</div>
+    <div class="row">&nbsp;&nbsp;lose any unsaved information in all applications.</div>
+    <div class="row">&nbsp;</div>
+    <div class="centered">Press any key to continue...<span class="blink">&#9608;</span></div>
+</div>
+
+{{ end }}
