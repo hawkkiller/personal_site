@@ -1,0 +1,34 @@
+@mixin respond-to($breakpoint) {
+    $raw-query: map-get($breakpoints, $breakpoint);
+
+    @if $raw-query {
+        $query: if(type-of($raw-query)=='string',
+            unquote($raw-query),
+            inspect($raw-query));
+
+        @media #{$query} {
+            @content;
+        }
+    }
+
+    @else {
+        @error 'No value found for `#{$breakpoint}`. '
+        +'Please make sure it is defined in `$breakpoints` map.';
+    }
+}
+
+@mixin define-color($title, $color) {
+    --#{$title}-h: #{hue($color)};
+    --#{$title}-l: #{lightness($color)};
+    --#{$title}-s: #{saturation($color)};
+    --#{$title}-a: #{alpha($color)};
+    $title: $color !global;
+}
+
+@function color($title, $hue: 0deg, $lightness: 0%, $saturation: 0%, $alpha: 0) {
+    @return hsla(calc(var(--#{$title}-h) + #{$hue}),
+        calc(var(--#{$title}-s) + #{$saturation}),
+        calc(var(--#{$title}-l) + #{$lightness}),
+        calc(var(--#{$title}-a) + #{$alpha}),
+    );
+}
