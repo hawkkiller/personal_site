@@ -39,13 +39,14 @@
 
         .header-menu-btn {
             color: color(md-sys-color-on-background);
-            line-height: 48px;
             display: block;
             font-size: 24px;
+            line-height: 48px;
             flex: 1;
             text-align: center;
         }
     }
+
 
     /* sections nav container  */
     .site_main_menu_header_nav {
@@ -69,5 +70,44 @@
             font-weight: 700;
             color: color(md-sys-color-on-background);
         }
+    }
+}
+
+/* drawer */
+.site_main_menu_drawer {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 0px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: color(md-sys-color-surface);
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+    box-shadow: 0 0 5px 0 color(md-sys-color-shadow);
+
+    /* nav section destination */
+    .site_main_menu_drawer_nav_section.active {
+        color: color(md-sys-color-tertiary);
+    }
+
+    .site_main_menu_drawer_nav_section {
+        @include headline-small();
+        margin-right: 30px;
+        font-weight: 700;
+        color: color(md-sys-color-on-surface);
+    }
+
+    .drawer-close-btn {
+        position: absolute;
+        top: 0;
+        right: 5px;
+        font-size: 36px;
+        color: color(md-sys-color-on-surface);
+        cursor: pointer;
     }
 }

@@ -1,4 +1,5 @@
 $colors: (
+    /* light */
     "md-sys-color-primary-light": #006493,
     "md-sys-color-on-primary-light": #ffffff,
     "md-sys-color-primary-container-light": #cae6ff,
@@ -6,7 +7,6 @@ $colors: (
     "md-sys-color-secondary-light": #50606e,
     "md-sys-color-on-secondary-light": #ffffff,
     "md-sys-color-secondary-container-light": #d3e5f5,
-    /* light */
     "md-sys-color-on-secondary-container-light": #0c1d29,
     "md-sys-color-tertiary-light": #65587b,
     "md-sys-color-on-tertiary-light": #ffffff,
@@ -157,7 +157,7 @@ $md-sys-typescale-title-large-letter-spacing: 0px;
 /* title - medium */
 $md-sys-typescale-title-medium-font-family-name: $fontFamily;
 $md-sys-typescale-title-medium-font-family-style: Medium;
-    $md-sys-typescale-title-medium-font-weight: 500px;
+$md-sys-typescale-title-medium-font-weight: 500px;
 $md-sys-typescale-title-medium-font-size: 16px;
 $md-sys-typescale-title-medium-line-height: 24px;
 $md-sys-typescale-title-medium-letter-spacing: 0.15px;

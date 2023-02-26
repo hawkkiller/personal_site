@@ -6,6 +6,7 @@
     }}
     {{ $style := resources.Get "styles/main.scss" | resources.ToCSS $options }}
     <link rel="stylesheet" href="{{ $style.RelPermalink }}" integrity="{{ $style.Data.Integrity }}">
+    <link rel="icon" class="site-favicon" type="image/x-icon" href="/images/logo.svg">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1">
     <title>
