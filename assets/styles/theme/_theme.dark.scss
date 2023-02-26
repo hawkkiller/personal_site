@@ -1,0 +1,32 @@
+.dark {
+    @include define-color('md-sys-color-primary', map-get($colors, 'md-sys-color-primary-dark'));
+    @include define-color('md-sys-color-on-primary', map-get($colors, 'md-sys-color-on-primary-dark'));
+    @include define-color('md-sys-color-primary-container', map-get($colors, 'md-sys-color-primary-container-dark'));
+    @include define-color('md-sys-color-on-primary-container', map-get($colors, 'md-sys-color-on-primary-container-dark'));
+    @include define-color('md-sys-color-secondary', map-get($colors, 'md-sys-color-secondary-dark'));
+    @include define-color('md-sys-color-on-secondary', map-get($colors, 'md-sys-color-on-secondary-dark'));
+    @include define-color('md-sys-color-secondary-container', map-get($colors, 'md-sys-color-secondary-container-dark'));
+    @include define-color('md-sys-color-on-secondary-container', map-get($colors, 'md-sys-color-on-secondary-container-dark'));
+    @include define-color('md-sys-color-tertiary', map-get($colors, 'md-sys-color-tertiary-dark'));
+    @include define-color('md-sys-color-on-tertiary', map-get($colors, 'md-sys-color-on-tertiary-dark'));
+    @include define-color('md-sys-color-tertiary-container', map-get($colors, 'md-sys-color-tertiary-container-dark'));
+    @include define-color('md-sys-color-on-tertiary-container', map-get($colors, 'md-sys-color-on-tertiary-container-dark'));
+    @include define-color('md-sys-color-error', map-get($colors, 'md-sys-color-error-dark'));
+    @include define-color('md-sys-color-error-container', map-get($colors, 'md-sys-color-error-container-dark'));
+    @include define-color('md-sys-color-on-error', map-get($colors, 'md-sys-color-on-error-dark'));
+    @include define-color('md-sys-color-on-error-container', map-get($colors, 'md-sys-color-on-error-container-dark'));
+    @include define-color('md-sys-color-background', map-get($colors, 'md-sys-color-background-dark'));
+    @include define-color('md-sys-color-on-background', map-get($colors, 'md-sys-color-on-background-dark'));
+    @include define-color('md-sys-color-surface', map-get($colors, 'md-sys-color-surface-dark'));
+    @include define-color('md-sys-color-on-surface', map-get($colors, 'md-sys-color-on-surface-dark'));
+    @include define-color('md-sys-color-surface-variant', map-get($colors, 'md-sys-color-surface-variant-dark'));
+    @include define-color('md-sys-color-on-surface-variant', map-get($colors, 'md-sys-color-on-surface-variant-dark'));
+    @include define-color('md-sys-color-outline', map-get($colors, 'md-sys-color-outline-dark'));
+    @include define-color('md-sys-color-inverse-on-surface', map-get($colors, 'md-sys-color-inverse-on-surface-dark'));
+    @include define-color('md-sys-color-inverse-surface', map-get($colors, 'md-sys-color-inverse-surface-dark'));
+    @include define-color('md-sys-color-inverse-primary', map-get($colors, 'md-sys-color-inverse-primary-dark'));
+    @include define-color('md-sys-color-shadow', map-get($colors, 'md-sys-color-shadow-dark'));
+    @include define-color('md-sys-color-surface-tint', map-get($colors, 'md-sys-color-surface-tint-dark'));
+    @include define-color('md-sys-color-outline-variant', map-get($colors, 'md-sys-color-outline-variant-dark'));
+    @include define-color('md-sys-color-scrim', map-get($colors, 'md-sys-color-scrim-dark'));
+}

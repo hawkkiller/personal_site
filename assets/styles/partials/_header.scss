@@ -1,0 +1,113 @@
+/* header */
+.site_main_menu_header {
+    position: sticky;
+    margin-top: 10px;
+    min-height: 48px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+
+    /* header title (author title) */
+    h1 {
+        @include headline-medium();
+        font-weight: 900;
+        color: color(md-sys-color-on-background);
+        text-align: center;
+        flex: auto;
+
+        @include respond-to('medium') {
+            margin-left: 10px;
+        }
+    }
+
+    /* header menu button */
+    .header-menu-btn-container {
+        margin-left: 10px;
+        width: 48px;
+        height: 48px;
+        cursor: pointer;
+
+        @include respond-to('medium') {
+            display: none;
+        }
+
+        &:hover {
+            border-radius: 50%;
+            background-color: color(md-sys-color-on-background, $alpha: -0.95);
+        }
+
+        .header-menu-btn {
+            color: color(md-sys-color-on-background);
+            display: block;
+            font-size: 24px;
+            line-height: 48px;
+            flex: 1;
+            text-align: center;
+        }
+    }
+
+
+    /* sections nav container  */
+    .site_main_menu_header_nav {
+        display: none;
+        flex-direction: row;
+        flex: 2;
+        justify-content: end;
+
+        @include respond-to('medium') {
+            display: flex;
+        }
+
+        /* nav section destination */
+        .site_main_menu_header_nav_section.active {
+            color: color(md-sys-color-tertiary);
+        }
+
+        .site_main_menu_header_nav_section {
+            @include headline-small();
+            margin-right: 30px;
+            font-weight: 700;
+            color: color(md-sys-color-on-background);
+        }
+    }
+}
+
+/* drawer */
+.site_main_menu_drawer {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 0px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: color(md-sys-color-surface);
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+    box-shadow: 0 0 5px 0 color(md-sys-color-shadow);
+
+    /* nav section destination */
+    .site_main_menu_drawer_nav_section.active {
+        color: color(md-sys-color-tertiary);
+    }
+
+    .site_main_menu_drawer_nav_section {
+        @include headline-small();
+        margin-right: 30px;
+        font-weight: 700;
+        color: color(md-sys-color-on-surface);
+    }
+
+    .drawer-close-btn {
+        position: absolute;
+        top: 0;
+        right: 5px;
+        font-size: 36px;
+        color: color(md-sys-color-on-surface);
+        cursor: pointer;
+    }
+}
