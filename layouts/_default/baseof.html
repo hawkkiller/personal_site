@@ -10,7 +10,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1">
     <title>
-        {{ with .Title }} {{ . }} {{ end }}
+        {{ with .Title }} {{ . }} {{ else }} {{ $.Site.Params.Author }} {{ end }}
     </title>
 </head>
 
