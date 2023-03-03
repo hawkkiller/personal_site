@@ -2,9 +2,13 @@ baseURL = 'https://themisha.dev'
 languageCode = 'en-us'
 title = 'portfolio'
 staticDir = ['static']
-[params]
+[Params]
   author = 'Michael Lazebny'
-
+  Github = 'https://github.com/hawkkiller/'
+  Linkedin = 'https://www.linkedin.com/in/michael-lazebnyi'
+  Twitter = 'https://twitter.com/michaellazebnyi'
+  Gmail = 'mailto:miskadl09@gmail.com'
+    
 [menu]
 [[menu.main]]
   name = 'Home'

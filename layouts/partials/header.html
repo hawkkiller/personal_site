@@ -8,32 +8,22 @@
     }
 
     function openDrawer() {
-        document.querySelector('.site_main_menu_drawer').style.width = "250px";
+        document.querySelector('.main_menu_drawer').style.width = "250px";
     }
 
     function closeDrawer() {
-        document.querySelector('.site_main_menu_drawer').style.width = "0";
+        document.querySelector('.main_menu_drawer').style.width = "0";
     }
 </script>
 
-<nav class="site_main_menu_drawer">
-    <span class="drawer-close-btn" onclick="closeDrawer()">
-        <i class="icon-clear"></i>
-    </span>
-    {{ range $index, $element := .Site.Menus.main }}
-    <a class="site_main_menu_drawer_nav_section {{ if eq $.Params.ActiveTab .Identifier }}active{{ end }}"
-        href="{{ .URL }}">{{ .Name }}</a>
-    {{ end }}
-</nav>
-
-<header class="site_main_menu_header">
+<header class="main_menu_header">
     <span class="header-menu-btn-container" onclick="openDrawer()">
         <i class="icon-menu header-menu-btn"></i>
     </span>
     <h1>{{ $.Site.Params.Author }}</h1>
-    <nav class="site_main_menu_header_nav">
-        {{ range $index, $element := .Site.Menus.main }}
-        <a class="site_main_menu_header_nav_section {{ if eq $.Params.ActiveTab .Identifier }}active{{ end }}"
+    <nav class="main_menu_header_nav">
+        {{ range .Site.Menus.main }}
+        <a class="main_menu_header_nav_section {{ if eq $.Params.ActiveTab .Identifier }}active{{ end }}"
             href="{{ .URL }}">{{ .Name }}</a>
         {{ end }}
     </nav>
