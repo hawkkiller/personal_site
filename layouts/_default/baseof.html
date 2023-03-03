@@ -17,6 +17,8 @@
 <body class="list">
     <div class="body-row">
         {{ partial "header.html" . }}
+        {{ partial "social.html" (dict "context" . "class" "social-links-container") }}
+        {{ partial "drawer.html" . }}
         {{ block "main" . }} {{ end }}
     </div>
 </body>

@@ -2,7 +2,7 @@
 
 @font-face {
     font-family: '#{$icomoon-font-family}';
-    src: url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?9rtb2t') format('woff');
+    src: url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff2?9rtb2t') format('woff2');
     font-weight: normal;
     font-style: normal;
     font-display: block;
@@ -20,6 +20,45 @@ i {
     /* Better Font Rendering =========== */
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-twitter {
+    &:before {
+        content: $icon-twitter;
+        color: #1da1f2;
+    }
+}
+
+.icon-gmail {
+    &:before {
+        content: $icon-gmail;
+        color: #d14836;
+    }
+}
+
+.icon-telegram {
+    &:before {
+        content: $icon-telegram;
+        color: #2ca5e0;
+    }
+}
+
+.icon-linkedin {
+    &:before {
+        content: $icon-linkedin;
+    }
+}
+
+.icon-github {
+    &:before {
+        content: $icon-github;
+    }
+}
+
+.icon-codersrank {
+    &:before {
+        content: $icon-codersrank;
+    }
 }
 
 .icon-clear {
