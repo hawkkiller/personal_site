@@ -15,11 +15,11 @@
 </head>
 
 <body class="list">
-    <div class="body-row">
+    <div class="body-column">
         {{ partial "header.html" . }}
+        {{ block "main" . }} {{ end }}
         {{ partial "social.html" (dict "context" . "class" "social-links-container") }}
         {{ partial "drawer.html" . }}
-        {{ block "main" . }} {{ end }}
     </div>
 </body>
 
