@@ -15,14 +15,30 @@
 }
 
 .home-first-section {
-    height: 40%;
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: end;
+    align-items: center;
 
     .home-first-section-avatar img {
         border-radius: 50%;
+    }
+
+    .short-description {
+        @include body-medium();
+        margin-top: 20px;
+        text-align: center;
+        width: 400px;
+        font-weight: 600;
+        color: color(md-sys-color-on-background);
+    }
+
+    .entrance-greeting {
+        @include headline-small();
+        margin-top: 20px;
+        font-weight: 500;
+        color: color(md-sys-color-on-background);
     }
 
     .typewriter-content-container {
@@ -30,26 +46,20 @@
         flex-direction: row;
         justify-content: center;
         height: 32px;
-    }
 
-    h2 {
-        @include headline-large();
-        font-weight: 600;
-        color: color(md-sys-color-on-background);
-    }
+        h3 {
+            @include headline-small();
+            font-weight: 400;
+            color: color(md-sys-color-on-background);
+        }
 
-    h3 {
-        @include headline-small();
-        font-weight: 400;
-        color: color(md-sys-color-on-background);
-    }
-
-    .typewriter-cursor {
-        width: 1px;
-        height: 32px;
-        background-color: color(md-sys-color-on-background);
-        margin-left: 2px;
-        animation: cursor-blink 1s infinite;
+        .typewriter-cursor {
+            width: 1px;
+            height: 32px;
+            background-color: color(md-sys-color-on-background);
+            margin-left: 2px;
+            animation: cursor-blink 1s infinite;
+        }
     }
 
     @keyframes cursor-blink {

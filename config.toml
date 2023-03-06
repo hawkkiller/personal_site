@@ -32,28 +32,3 @@ languageCode = 'en-us'
         url = '/contact'
         identifier = 'contact'
         weight = 3
-  [languages.ru]
-    title = 'Михаил Лазебный'
-    description = 'Личный сайт Михаила Лазебного'
-    languageName = 'Русский'
-    contentDir = 'content/ru'
-    weight = 2
-    [languages.ru.params]
-      author = 'Михаил Лазебный'
-    [languages.ru.menu]
-      [[languages.ru.menu.main]]
-        name = 'Главная'
-        url = '/'
-        identifier = 'home'
-        weight = 1
-      [[languages.ru.menu.main]]
-        name = 'Обо мне'
-        url = '/about/'
-        identifier = 'about'
-        weight = 2
-      [[languages.ru.menu.main]]
-        name = 'Связаться'
-        url = '/contact/'
-        identifier = 'contact'
-        weight = 3
-    

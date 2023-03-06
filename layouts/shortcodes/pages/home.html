@@ -2,6 +2,10 @@
     const texts = [
         'Flutter',
         'Dart',
+        'Swift',
+        'Kotlin',
+        'Java',
+        'C',
         'Android',
         'iOS',
         'Web',
@@ -36,7 +40,7 @@
 
             if (letter.length === currentText.length && !isDeleting) {
                 isDeleting = true;
-                setTimeout(type, 1000);
+                setTimeout(type, 2000);
             } else if (letter.length === 0 && isDeleting) {
                 isDeleting = false;
                 i++;
@@ -54,11 +58,11 @@
 </script>
 
 <div class="home-column">
-
     <div class="home-first-section">
         {{ partial "shortcodes/figure.html" (dict "src" "/images/avatar.webp" "width" "200px" "height" "200px"
         "class" "home-first-section-avatar") }}
-        <h2>{{ i18n "entrance-greeting" }}</h2>
+        <h3 class="short-description">{{ i18n "short-description" }}</h3>
+        {{/* <h2 class="entrance-greeting">{{ i18n "entrance-greeting" }}</h2> */}}
         <div class="typewriter-content-container">
             <h3 class="typewriter-text"></h3>
             <span class="typewriter-cursor"></span>
