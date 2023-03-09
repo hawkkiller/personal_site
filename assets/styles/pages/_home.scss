@@ -18,44 +18,41 @@
     text-align: center;
     display: flex;
     flex-direction: column;
-    justify-content: end;
+    justify-content: center;
     align-items: center;
+    height: 100%;
+    min-height: 400px;
+    margin-bottom: 48px;
 
     .home-first-section-avatar img {
         border-radius: 50%;
     }
 
     .short-description {
-        @include body-medium();
+        @include body-large();
         margin-top: 20px;
         text-align: center;
-        width: 400px;
-        font-weight: 600;
-        color: color(md-sys-color-on-background);
-    }
-
-    .entrance-greeting {
-        @include headline-small();
-        margin-top: 20px;
+        max-width: 450px;
         font-weight: 500;
         color: color(md-sys-color-on-background);
     }
 
     .typewriter-content-container {
+        margin-top: 10px;
         display: flex;
         flex-direction: row;
         justify-content: center;
-        height: 32px;
+        height: 36px;
 
         h3 {
-            @include headline-small();
+            @include headline-medium();
             font-weight: 400;
             color: color(md-sys-color-on-background);
         }
 
         .typewriter-cursor {
             width: 1px;
-            height: 32px;
+            height: 36px;
             background-color: color(md-sys-color-on-background);
             margin-left: 2px;
             animation: cursor-blink 1s infinite;
