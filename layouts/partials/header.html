@@ -24,7 +24,7 @@
     <nav class="main_menu_header_nav">
         {{ range .Site.Menus.main }}
         <a class="main_menu_header_nav_section {{ if eq $.Params.ActiveTab .Identifier }}active{{ end }}"
-            href="{{ .URL }}">{{ .Name }}</a>
+            href="{{ .URL | relLangURL }}">{{ .Name }}</a>
         {{ end }}
     </nav>
 </header>

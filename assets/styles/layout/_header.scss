@@ -1,7 +1,6 @@
 /* header */
 .main_menu_header {
     position: sticky;
-    margin-top: 10px;
     min-height: 48px;
     width: 100%;
     display: flex;
@@ -47,7 +46,6 @@
         }
     }
 
-
     /* sections nav container  */
     .main_menu_header_nav {
         display: none;
@@ -65,7 +63,7 @@
         }
 
         .main_menu_header_nav_section {
-            @include headline-small();
+            @include body-large();
             margin-right: 30px;
             font-weight: 700;
             color: color(md-sys-color-on-background);
