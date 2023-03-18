@@ -78,7 +78,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
       # URL of the LOGO
       logo = ""
       # title name
-      name = ""
+      name = "Michael Lazebny"
       # you can add extra information before the name (HTML format is supported), such as icons
       pre = ""
       # you can add extra information after the name (HTML format is supported), such as icons
@@ -224,9 +224,9 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
       # whether to enable the table of the contents
       enable = true
       #  whether to keep the static table of the contents in front of the post
-      keepStatic = true
+      keepStatic = false
       # whether to make the table of the contents in the sidebar automatically collapsed
-      auto = true
+      auto = false
     #  KaTeX mathematical formulas
     [params.page.math]
       enable = true
@@ -503,8 +503,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
 
 # Permalinks config
 [Permalinks]
-  # posts = ":year/:month/:filename"
-  posts = ":filename"
+  posts = ":year/:month/:filename"
 
 # Privacy config
 [privacy]
