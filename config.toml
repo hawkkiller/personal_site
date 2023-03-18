@@ -16,7 +16,7 @@ hasCJKLanguage = false
 # default amount of posts in each pages
 paginate = 12
 # google analytics code [UA-XXXXXXXX-X]
-googleAnalytics = ""
+googleAnalytics = "G-1Z10HWF5SW"
 # copyright description used only for seo schema
 copyright = ""
 
@@ -420,13 +420,13 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     image = ""
     # thumbnail URL
     thumbnailUrl = ""
-
+  
   #  Analytics config
   [params.analytics]
-    enable = false
+    enable = true
     # Google Analytics
     [params.analytics.google]
-      id = ""
+      id = "1:797842584326:web:b7dec022a29f3ff7ec2487"
       # whether to anonymize IP
       anonymizeIP = true
     # Fathom Analytics
