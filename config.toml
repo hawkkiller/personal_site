@@ -420,13 +420,13 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     image = ""
     # thumbnail URL
     thumbnailUrl = ""
-  
+
   #  Analytics config
   [params.analytics]
     enable = true
     # Google Analytics
     [params.analytics.google]
-      id = "1:797842584326:web:b7dec022a29f3ff7ec2487"
+      id = "G-1Z10HWF5SW"
       # whether to anonymize IP
       anonymizeIP = true
     # Fathom Analytics
