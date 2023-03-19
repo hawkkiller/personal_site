@@ -3,8 +3,7 @@ title: "Dart isolates and Isolate Groups"
 date: 2023-03-18T19:23:51+01:00
 summary: "What are Isolate Groups and how they improve performance?"
 featuredImage: "images/isolate.png"
-seo: 
-  images:
+images:
     - "images/isolate.png"
 ---
 
@@ -22,12 +21,12 @@ Lightweight isolates and isolate groups were released in Dart a while back and t
 
 ### So, what do those Groups do?
 
-{{% figure src="images/mraleph-vm.png" title="mraleph, Dart VM introduction" width="100%" height="100%" %}}
+![Dart VM introduction](images/mraleph-vm.png "Dart VM introduction")
 
 Isolates are grouped together into isolate groups. Isolate within the group share the same garbage collector managed heap, used as a storage for objects allocated by an isolate. Heap sharing between isolates in the same group is an implementation detail which is not observable from the Dart code. Even isolates within the same group can not share any mutable state directly and can only communicate by message passing through ports (not to be confused with network ports!).
 Generally, this means that if your Isolates are in the same group, you can send not only the plain objects between, such behaviour was not possible before.
 
-{{% figure src="images/code.png" width="100px" height="200px" %}}
+![Isolates code](images/code.png "Isolates Code")
 
 ## How to create an isolate?
 
