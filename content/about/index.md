@@ -1,9 +1,12 @@
-+++
-title="About Me"
-date=2023-03-19T20:14:58+01:00
-draft=false
-description="About Me"
-+++
+---
+title: "About Me"
+date: 2023-03-19T20:14:58+01:00
+draft: false
+description: "About Me"
+images:
+  - "images/myself.webp"
+---
+
 {{< style "img { height: 200px; width: 200px; object-fit: cover; border-radius: 50% }" >}}
 {{< figure src="images/myself.webp" >}}
 {{< /style >}}
