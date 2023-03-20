@@ -3,13 +3,13 @@ title: "About Me"
 date: 2023-03-19T20:14:58+01:00
 draft: false
 description: "About Me"
+type: "about"
+layout: "about"
 images:
   - "images/myself.webp"
 ---
 
-{{< style "img {border-radius: 50%;height:200px;width:200px;object-fit:cover;margin:0 auto;display:block;};" >}}
-{{< image src="images/myself.webp" linked=false >}}
-{{< /style >}}
+{{< figure src="images/myself.webp" class="myself-about" >}}
 
 {{< admonition type=info title="Brief info" >}}
 My name is `Michael Lazebny` and I'm 16 y.o. Currently, I live in Cracow, Poland. I'm passionate about programming and I'm always looking for new challenges. Now, I am working as a __Flutter Developer__, but I'm also interested in other fields. I'm also a big fan of open-source and I always try to contribute to the community. `Not currently looking for a job, but I'm always open to new opportunities.`
