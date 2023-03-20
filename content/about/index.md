@@ -7,9 +7,10 @@ images:
   - "images/myself.webp"
 ---
 
-{{< style "img { height: 200px; width: 200px; object-fit: cover; border-radius: 50% }" >}}
-{{< figure src="images/myself.webp" >}}
+{{< style "img {border-radius: 50%;height:200px;width:200px;object-fit:cover;margin:0 auto;display:block;};" >}}
+{{< image src="images/myself.webp" linked=false >}}
 {{< /style >}}
+
 {{< admonition type=info title="Brief info" >}}
 My name is `Michael Lazebny` and I'm 16 y.o. Currently, I live in Cracow, Poland. I'm passionate about programming and I'm always looking for new challenges. Now, I am working as a __Flutter Developer__, but I'm also interested in other fields. I'm also a big fan of open-source and I always try to contribute to the community. `Not currently looking for a job, but I'm always open to new opportunities.`
 {{</ admonition >}}
@@ -34,7 +35,7 @@ abstract class MichaelLazebny {
   
   void participateInCodeReviews();
 
-  void fixDifficultProblems();
+  void solveDifficultProblems();
 
   void execute() {
     while (true) {
@@ -44,7 +45,7 @@ abstract class MichaelLazebny {
       debugAndTroubleshoot();
       writeCleanCode();
       participateInCodeReviews();
-      fixDifficultProblems();
+      solveDifficultProblems();
     }
   }
 }
