@@ -50,3 +50,8 @@ abstract class MichaelLazebny {
   }
 }
 ```
+
+## Experience
+
+{{< experience logo="images/purpleplane.jpeg" startDate="Nov, 2021" company="PurplePlane" >}}
+{{< experience logo="images/harddays.jpg" startDate="Jun, 2021" endDate="Nov, 2021" company="HardDays" >}}
