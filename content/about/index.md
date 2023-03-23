@@ -9,6 +9,10 @@ images:
   - "images/myself.webp"
 ---
 
+<script src="https://unpkg.com/@codersrank/activity@latest/codersrank-activity.min.js"></script>
+<script src="https://unpkg.com/@codersrank/skills-chart@latest/codersrank-skills-chart.min.js"></script>
+<script src="https://unpkg.com/@codersrank/portfolio@latest/codersrank-portfolio.min.js"></script>
+
 {{< figure src="images/myself.webp" class="myself-about" >}}
 
 {{< admonition type=info title="Brief info" >}}
@@ -25,7 +29,7 @@ abstract class MichaelLazebny {
 
   void developCrossPlatformApps();
   
-  void collaborateWithCrossFunctionalTeam();
+  void collaborateWithTeam();
   
   void integrateWithBackendServices();
   
@@ -54,13 +58,14 @@ abstract class MichaelLazebny {
 ## Experience
 
 {{< about/experience logo="images/purpleplane.jpeg" startDate="Nov, 2021" company="PurplePlane" role="Middle Flutter Engineer" >}}
+{{< about/experience logo="images/pashapay.jpeg" startDate="Feb, 2022" endDate="Jun, 2022" company="PashaPay" role="Middle Flutter Engineer" >}}
 {{< about/experience logo="images/harddays.jpg" startDate="Jun, 2021" endDate="Nov, 2021" company="HardDays" role="Junior Flutter Developer" >}}
 
 ## Skills
 
 {{< about/skills >}}
-  {{< about/skill name="Dart" level="Expert" icon="star" >}}
-  {{< about/skill name="Flutter" level="Expert" icon="star" >}}
+  {{< about/skill name="Dart" level="Expert" icon="star" link="https://dart.dev" >}}
+  {{< about/skill name="Flutter" level="Expert" icon="star" link="https://flutter.dev" >}}
   {{< about/skill name="Kotlin" level="Familiar" icon="star" >}}
   {{< about/skill name="Swift" level="Familiar" >}}
   {{< about/skill name="BLoC" level="Expert" >}}
@@ -69,3 +74,9 @@ abstract class MichaelLazebny {
   {{< about/skill name="Go" level="Advanced" >}}
   {{< about/skill name="Hugo" level="Advanced" >}}
 {{< /about/skills >}}
+
+## Activity
+
+<codersrank-activity username="hawkkiller" tooltip="true" branding="false"></codersrank-activity>
+
+<codersrank-skills-chart username="hawkkiller" branding="false" tooltip="true"></codersrank-skills-chart>

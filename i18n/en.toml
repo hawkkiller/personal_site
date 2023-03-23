@@ -37,3 +37,16 @@ My acknowledgements:
 - Implemented responsive layout
 - Created adaptive dark & light theme
 """
+[PashaPay]
+other = """
+Fintech banking startup.
+
+My achievements:
+- communicated with team, shared my own ideas
+- implemented applinks and declarative navigation approach
+- implemented business features
+- completed almost each sprint on time
+- added firebase analytics, firebase messaging
+- mentored & onboarded Flutter developers
+- actively fixed critical bugs
+"""
