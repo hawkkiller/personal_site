@@ -1,4 +1,13 @@
 <span class="skill">
-    {{ .Get "name" }}
-    {{ with .Get "level" }}<span class="skill-level">({{ . }})</span>{{ end }}
+    {{ if $icon := .Get "icon" }}
+    <i class="fa fa-{{ $icon }}"></i>
+    {{ end }}
+    <span class="name">
+        {{ .Get "name" }}
+    </span>
+    {{ with .Get "level" }}
+    <span class="skill-level">
+        ({{ . }})
+    </span>
+    {{ end }}
 </span>

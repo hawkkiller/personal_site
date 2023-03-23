@@ -9,11 +9,18 @@
     border-radius: 4px;
     padding: 5px 10px;
     font-weight: bold;
-    color: #000;
-}
 
-.skill-level {
-    font-weight: normal;
-    margin-left: 5px;
-    color: #777;
+    .name {
+        color: #474105;
+    }
+
+    .fa {
+        color: #474105;
+    }
+
+    .skill-level {
+        font-weight: normal;
+        margin-left: 5px;
+        color: #383838;
+    }
 }
