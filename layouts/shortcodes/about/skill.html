@@ -1,0 +1,4 @@
+<span class="skill">
+    {{ .Get "name" }}
+    {{ with .Get "level" }}<span class="skill-level">({{ . }})</span>{{ end }}
+</span>

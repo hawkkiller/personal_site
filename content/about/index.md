@@ -53,5 +53,19 @@ abstract class MichaelLazebny {
 
 ## Experience
 
-{{< experience logo="images/purpleplane.jpeg" startDate="Nov, 2021" company="PurplePlane" >}}
-{{< experience logo="images/harddays.jpg" startDate="Jun, 2021" endDate="Nov, 2021" company="HardDays" >}}
+{{< about/experience logo="images/purpleplane.jpeg" startDate="Nov, 2021" company="PurplePlane" >}}
+{{< about/experience logo="images/harddays.jpg" startDate="Jun, 2021" endDate="Nov, 2021" company="HardDays" >}}
+
+## Skills
+
+{{< about/skills >}}
+  {{< about/skill name="Dart" level="Expert" >}}
+  {{< about/skill name="Flutter" level="Expert" >}}
+  {{< about/skill name="Kotlin" level="Familiar" >}}
+  {{< about/skill name="Swift" level="Familiar" >}}
+  {{< about/skill name="BLoC" level="Expert" >}}
+  {{< about/skill name="Architecture" level="Advanced" >}}
+  {{< about/skill name="Architecture" level="Advanced" >}}
+  {{< about/skill name="Go" level="Advanced" >}}
+  {{< about/skill name="Hugo" level="Advanced" >}}
+{{< /about/skills >}}
