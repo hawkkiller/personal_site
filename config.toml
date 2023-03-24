@@ -140,7 +140,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     # whether to omit favicon resource links
     noFavicon = false
     # modern SVG favicon to use in place of older style .png and .ico files
-    svgFavicon = "/images/logo.svg"
+    svgFavicon = "images/logo.svg"
     # Android browser theme color
     themeColor = "#ffffff"
     # Safari mask icon color
@@ -180,7 +180,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
       # Gravatar Email for preferred avatar in home page
       gravatarEmail = ""
       # URL of avatar shown in home page
-      avatarURL = "/images/avatar.jpeg"
+      avatarURL = "images/avatar.jpeg"
       #  title shown in home page (HTML format is supported)
       title = "Flutter Developer"
       # subtitle shown in home page (HTML format is supported)
@@ -403,7 +403,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
       images = []
       # Publisher info
       [params.page.seo.publisher]
-        name = ""
+        name = "Michael Lazebny"
         logoUrl = ""
 
   #  TypeIt config
@@ -415,7 +415,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     # character used for the cursor (HTML format is supported)
     cursorChar = "|"
     # cursor duration after typing finishing (measured in milliseconds, "-1" means unlimited)
-    duration = -1
+    duration = 500
 
   # Site verification code config for Google/Bing/Yandex/Pinterest/Baidu
   [params.verification]
@@ -469,7 +469,6 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     # you can store your own data files in the same path under your project:
     # "assets/data/cdn/"
     data = ""
-    autocompleteJS=false
 
   #  Compatibility config
   [params.compatibility]
