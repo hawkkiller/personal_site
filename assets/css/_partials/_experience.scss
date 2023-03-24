@@ -1,0 +1,52 @@
+div.experience {
+    white-space: pre-line;
+    display: flex;
+    padding-bottom: 20px;
+
+    .company-logo-container {
+        height: 100%;
+        display: flex;
+        justify-content: start;
+        width: 50px;
+
+        .company-logo {
+            object-fit: fill;
+            border-radius: 10%;
+        }
+    }
+
+    .experience-column {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+        padding-left: 0.5rem;
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        p {
+            margin: 0;
+        }
+
+        .experience-company {
+            font-weight: bold;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .experience-role {
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        .experience-description {
+            margin-top: 0;
+        }
+
+    }
+}

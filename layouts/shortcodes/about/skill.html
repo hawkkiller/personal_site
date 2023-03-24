@@ -1,0 +1,20 @@
+{{ $icon := .Get "icon" }}
+{{ $link := .Get "link" }}
+{{ $name := .Get "name" }}
+<span class="skill">
+    {{ if $icon }}
+    <i class="fa fa-{{ $icon }}"></i>
+    {{ end }}
+
+    {{ with $link }}
+    <a class="name" href="{{ . }}" target="_blank">{{ $name }}</a>
+    {{ else }}
+    <span class="name">{{ $name }}</span>
+    {{ end }}
+
+    {{ with .Get "level" }}
+    <span class="skill-level">
+        ({{ . }})
+    </span>
+    {{ end }}
+</span>

@@ -1,0 +1,52 @@
+[HardDays]
+other = """
+Creation of cross-platform applications. Implementation of business features and architecture.
+
+Some of my achievements are:
+- implemented cross-platform WebRTC calls using the Agora library
+- used Navigator 2.0 for the first time
+- migrated the application to a more maintainable and extensible architecture
+- implemented real-time facial recognition using machine learning
+- reduced the size of the application from 250 MB to 100 MB
+- successfully delivered over 50 business features without falling a sprint
+- redesigned the interaction with the GraphQL API
+- added smooth and beautiful animations
+- written clean and performant code
+- set up WebSocket communication with backend
+- added Google Analytics and various custom events
+- implemented payment through Google/Apple Pay and app stores
+- implemented continuous integration and continuous delivery/deployment (CI/CD)
+- released a subscription and follower feature
+- implemented background audio and music playback
+"""
+[PurplePlane]
+other = """
+Mobile apps development: IoT, fintech, B2B
+
+My acknowledgements:
+- Established code reviews & PR and branches managing
+- Implemented purchases via markets
+- Added analytics with custom events and conditions
+- Implemented architecture, folder structure and starter for the project
+- Planned, estimated, implemented business features
+- Managed & decreased tech dept
+- Added Navigator 2.0
+- Added data update in the background(geolocation, pedometer steps)
+- Created CICD pipeline
+- Configured strong lints and refactored application
+- Implemented responsive layout
+- Created adaptive dark & light theme
+"""
+[PashaPay]
+other = """
+Fintech banking startup.
+
+My achievements:
+- communicated with team, shared my own ideas
+- implemented applinks and declarative navigation approach
+- implemented business features
+- completed almost each sprint on time
+- added firebase analytics, firebase messaging
+- mentored & onboarded Flutter developers
+- actively fixed critical bugs
+"""

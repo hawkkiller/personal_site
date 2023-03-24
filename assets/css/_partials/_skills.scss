@@ -1,0 +1,26 @@
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skill {
+    background-color: #f0f0f0;
+    border-radius: 4px;
+    padding: 5px 10px;
+    font-weight: bold;
+
+    .name {
+        color: #474105;
+    }
+
+    .fa {
+        color: #474105;
+    }
+
+    .skill-level {
+        font-weight: normal;
+        margin-left: 5px;
+        color: #383838;
+    }
+}

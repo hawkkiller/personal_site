@@ -1,0 +1,30 @@
+{{ $logo := .Get "logo" }}
+{{ $company := .Get "company" }}
+{{ $startDate := .Get "startDate" }}
+{{ $endDate := .Get "endDate" }}
+{{ $expDescription := i18n $company }}
+{{ $role := .Get "role" }}
+<div class="experience">
+    {{- if $logo -}}
+    <div class="company-logo-container">
+        <img src="{{ $logo }}" alt="{{ $company }}" class="company-logo">
+    </div>
+    {{- end -}}
+    <div class="experience-column">
+        <div class="experience-company">
+            {{- if $company -}}
+            <h3 class="company-name">{{ $company }}</h3>
+            {{- end -}}
+
+            {{- if $startDate -}}
+            <p class="company-date-range">{{ $startDate }} {{ if $endDate }} - {{ $endDate }} {{ end }}</p>
+            {{- end -}}
+        </div>
+        {{- if $role -}}
+        <p class="experience-role">{{ $role }}</p>
+        {{- end -}}
+        {{- if $expDescription -}}
+        <p class="experience-description">{{ $expDescription }}</p>
+        {{- end -}}
+    </div>
+</div>
