@@ -7,11 +7,12 @@ type: "about"
 layout: "about"
 images:
   - "images/myself.webp"
+
 ---
 
-<script src="https://unpkg.com/@codersrank/activity@latest/codersrank-activity.min.js"></script>
-<script src="https://unpkg.com/@codersrank/skills-chart@latest/codersrank-skills-chart.min.js"></script>
-<script src="https://unpkg.com/@codersrank/portfolio@latest/codersrank-portfolio.min.js"></script>
+<script defer src="https://unpkg.com/@codersrank/activity@latest/codersrank-activity.min.js"></script>
+<script defer src="https://unpkg.com/@codersrank/skills-chart@latest/codersrank-skills-chart.min.js"></script>
+<script defer src="https://unpkg.com/@codersrank/portfolio@latest/codersrank-portfolio.min.js"></script>
 
 {{< figure src="images/myself.webp" class="myself-about" >}}
 
