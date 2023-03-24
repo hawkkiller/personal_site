@@ -1,7 +1,7 @@
 baseURL = "https://themisha.dev"
 
 # Change the default theme to be use when building the site with Hugo
-theme = "LoveIt"
+theme = "enigma"
 
 # website title
 title = "Michael Lazebny"
@@ -76,7 +76,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
   # website description for RSS, SEO, Open Graph and Twitter Cards
   description = "Michael Lazebny's personal website, blog, and portfolio."
   # website images for Open Graph and Twitter Cards
-  images = ["/avatar.jpeg"]
+  images = ["images/myself.webp"]
 
   # Header config
   [params.header]
@@ -140,7 +140,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     # whether to omit favicon resource links
     noFavicon = false
     # modern SVG favicon to use in place of older style .png and .ico files
-    svgFavicon = "/images/logo.svg"
+    svgFavicon = "images/logo.svg"
     # Android browser theme color
     themeColor = "#ffffff"
     # Safari mask icon color
@@ -180,7 +180,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
       # Gravatar Email for preferred avatar in home page
       gravatarEmail = ""
       # URL of avatar shown in home page
-      avatarURL = "/images/avatar.jpeg"
+      avatarURL = "images/avatar.jpeg"
       #  title shown in home page (HTML format is supported)
       title = "Flutter Developer"
       # subtitle shown in home page (HTML format is supported)
@@ -240,7 +240,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
       auto = false
     #  KaTeX mathematical formulas
     [params.page.math]
-      enable = true
+      enable = false
       #  default inline delimiter is $ ... $ and \( ... \)
       inlineLeftDelimiter = ""
       inlineRightDelimiter = ""
@@ -403,7 +403,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
       images = []
       # Publisher info
       [params.page.seo.publisher]
-        name = ""
+        name = "Michael Lazebny"
         logoUrl = ""
 
   #  TypeIt config
@@ -415,7 +415,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     # character used for the cursor (HTML format is supported)
     cursorChar = "|"
     # cursor duration after typing finishing (measured in milliseconds, "-1" means unlimited)
-    duration = -1
+    duration = 500
 
   # Site verification code config for Google/Bing/Yandex/Pinterest/Baidu
   [params.verification]

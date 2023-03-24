@@ -7,10 +7,9 @@ div.experience {
         height: 100%;
         display: flex;
         justify-content: start;
-        width: 50px;
 
         .company-logo {
-            object-fit: fill;
+            object-fit: cover;
             border-radius: 10%;
         }
     }
