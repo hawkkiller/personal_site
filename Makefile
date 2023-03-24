@@ -1,2 +1,2 @@
 serve:
-	@hugo server --disableFastRender --port 6902 --noBuildLock
+	@hugo server --disableFastRender --port 7709 --noBuildLock
