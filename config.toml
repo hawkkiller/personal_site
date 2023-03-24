@@ -1,7 +1,7 @@
 baseURL = "https://themisha.dev"
 
 # Change the default theme to be use when building the site with Hugo
-theme = "LoveIt"
+theme = "enigma"
 
 # website title
 title = "Michael Lazebny"
@@ -240,7 +240,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
       auto = false
     #  KaTeX mathematical formulas
     [params.page.math]
-      enable = true
+      enable = false
       #  default inline delimiter is $ ... $ and \( ... \)
       inlineLeftDelimiter = ""
       inlineRightDelimiter = ""
@@ -469,6 +469,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     # you can store your own data files in the same path under your project:
     # "assets/data/cdn/"
     data = ""
+    autocompleteJS=false
 
   #  Compatibility config
   [params.compatibility]
