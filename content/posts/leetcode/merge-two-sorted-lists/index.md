@@ -7,13 +7,11 @@ featuredImage: "merge_ex1.jpg"
 images:
   - "leetcode23.png"
 tags:
-  - "leetcode"
-  - "iterative"
-  - "day23"
-  - "sorted"
+  - "LeetCode"
+  - "Iterative"
+  - "Medium"
   - "linked list"
-  - "apple"
-  - "amazon"
+  - "day23"
 ---
 
 ## Problem
