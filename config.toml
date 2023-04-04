@@ -81,7 +81,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
   # website description for RSS, SEO, Open Graph and Twitter Cards
   description = "Michael Lazebny's personal website, blog, and portfolio."
   # website images for Open Graph and Twitter Cards
-  images = ["/images/myself.webp"]
+  images = ["/images/og.png"]
 
   [params.cv]
     enable = true
