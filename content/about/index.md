@@ -24,6 +24,10 @@ My name is `Michael Lazebny` and I'm 16 y.o. Currently, I live in Cracow, Poland
 
 My role is to build __high-quality__, interactive, and performant applications for __Mobile__, __Web__ and __Desktop__ platforms. I do work in a __cross-functional__ team of designers, project managers, and other developers to __design__, __develop__ and __test__ applications.
 
+{{< about/cv >}}
+CV
+{{</ about/cv >}}
+
 ```dart {linenos=inline}
 abstract class MichaelLazebny {
   MichaelLazebny();
