@@ -6,8 +6,7 @@ description: "About Me"
 type: "about"
 layout: "about"
 images:
-  - "images/myself.webp"
-
+  - "images/myself@4x.webp"
 ---
 
 <script defer src="https://unpkg.com/@codersrank/activity@latest/codersrank-activity.min.js"></script>
@@ -17,7 +16,7 @@ images:
 <img src="images/myself.webp" srcset="images/myself@2x.webp 2x, images/myself@3x.webp 3x, images/myself@4x.webp 4x" class="myself-about" width="200px" height="200px"  >
 
 {{< admonition type=info title="Brief info" >}}
-My name is `Michael Lazebny` and I'm 16 y.o. Currently, I live in Cracow, Poland. I'm passionate about programming and I'm always looking for new challenges. Now, I am working as a __Flutter Developer__, but I'm also interested in other fields. I'm also a big fan of open-source and I always try to contribute to the community. `Not currently looking for a job, but I'm always open to new opportunities.`
+My name is `Michael Lazebny` and I'm 16 y.o. Currently, I live in Cracow, Poland. I'm passionate about programming and always looking for new challenges. Now, I work as a __Flutter Developer__, but also interested in other fields. Futhermore, I'm a big fan of open-source and always try to contribute to the community. `Not currently looking for a job, but I'm always open to new opportunities.`
 {{</ admonition >}}
 
 ## About me

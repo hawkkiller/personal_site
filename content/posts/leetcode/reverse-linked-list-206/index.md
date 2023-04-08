@@ -7,9 +7,9 @@ featuredImage: "preview.png"
 images:
   - "leetcode24.png"
 tags:
-  - "LeetCode"
-  - "Iterative"
-  - "Easy"
+  - "leetcode"
+  - "iterative"
+  - "easy"
   - "linked list"
   - "day24"
 ---
