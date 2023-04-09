@@ -7,9 +7,9 @@ featuredImage: "preview.png"
 images:
   - "leetcode23.png"
 tags:
-  - "LeetCode"
-  - "Iterative"
-  - "Medium"
+  - "leetcode"
+  - "iterative"
+  - "medium"
   - "linked list"
   - "day23"
 ---
