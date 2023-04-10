@@ -192,6 +192,7 @@ final defaultThemeData = ThemeData(
   useMaterial3: true,
 );
 
+// use these theme datas in your app to switch between themes
 final lightThemeData = defaultThemeData.copyWith(
   colorScheme: lightColorScheme,
 );
@@ -235,7 +236,6 @@ const lightColorScheme = ColorScheme(
 );
 
 // dark ... 
-
 ```
 
 Now we can use the Material 3 Theme in our project, and everything is ready to go! The best part is that Flutter Widgets from the material library use this theme by default. So, we don't need to define the style for every widget. We just need to define the color scheme, and the rest is handled by Flutter. I've concocted a small showcase app that employs this approach. You can find it [here](https://github.com/hawkkiller/theme_example).
