@@ -2,7 +2,7 @@
 title: "Unleashing the power of Flutter themes"
 date: 2023-04-10T22:38:59+0200
 draft: false
-summary: "A few months ago, I embarked on a journey exploring the mystical land of Flutter themes. Like any adventurer worth their salt, I started with the basics: default themes, global colour variables, and theme extensions.
+summary: "A few months ago, I embarked on a journey exploring the mystical land of Flutter themes. Like any adventurer worth their salt, I started with the basics: default themes, global Color variables, and theme extensions.
 Unfortunately, they were all fraught with cons! But fear not, dear reader, for I am about to reveal the approach that I have used for the past few months and it has brought great happiness to my coding lif"
 resources:
   - name: "featured-image"
@@ -18,7 +18,7 @@ tags:
 
 A couple of moons ago, I set out on a thrilling quest to uncover the enigmatic realm of Flutter themes. As any self-respecting adventurer would, I began with the basics: default themes, global color variables, and theme extensions. To my dismay, they all had their share of pitfalls! But fret not, dear reader, for I am about to unveil an approach that has brought immense joy to my coding life over the past months. Let's venture forth and unravel the journey together.
 
-## Global colour variables
+## Global Color variables
 
 ```dart
 const black = Color(0xFF000000);
@@ -44,7 +44,7 @@ Using __color variables__ is the most primitive way to theme your app. You simpl
 
 Although this method isn't quite perfect, it's better than nothing. It's fine for small apps or MVPs. But now, let's move on to something more exciting.
 
-## Colour containers
+## Color containers
 
 ```dart
 abstract class ColorContainer {
