@@ -4,9 +4,9 @@ date: 2023-03-20T08:00:57+01:00
 draft: false
 summary: "You are given the root node of a binary search tree (BST) and a value to insert into the tree. Return the root node of the BST after the insertion. It is guaranteed that the new value does not exist in the original BST."
 tags:
-  - "LeetCode"
-  - "Medium"
-  - "Binary Search Tree"
+  - "leetcode"
+  - "medium"
+  - "bst"
   - "day10"
 images:
   - "solution.png"
