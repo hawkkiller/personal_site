@@ -3,9 +3,9 @@ title: "Merge Sorted Array 88"
 date: 2023-04-10T08:45:46+02:00
 draft: false
 summary: "Given two sorted integer arrays nums1 and nums2, merge nums2 into nums1 as one sorted array."
-featuredImage: "preview.png"
-images:
-  - "preview.png"
+resources:
+  - name: "featured-image"
+    src: "preview.png"
 tags:
   - "leetcode"
   - "easy"

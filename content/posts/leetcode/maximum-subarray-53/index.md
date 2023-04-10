@@ -3,9 +3,9 @@ title: "Maximum Subarray 53"
 date: 2023-04-07T09:47:05+02:00
 draft: false
 summary: "Given an integer array nums, find the contiguous subarray (containing at least one number) which has the largest sum and return its sum."
-featuredImage: "preview.png"
-images:
-  - "preview.png"
+resources:
+  - name: "featured-image"
+    src: "preview.png"
 tags:
   - "day25"
   - "leetcode"
