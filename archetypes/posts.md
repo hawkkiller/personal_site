@@ -3,9 +3,9 @@ title: "{{ replace .Name "-" " " | title }}"
 date: {{ .Date }}
 draft: false
 summary: ""
-featuredImage: ""
-images:
-  - ""
+resources:
+  - name: "featured-image"
+    src: "preview.png"
 tags:
   - ""
 ---

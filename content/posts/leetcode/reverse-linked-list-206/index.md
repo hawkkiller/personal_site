@@ -3,9 +3,9 @@ title: "Reverse Linked List 206"
 date: 2023-04-04T07:24:44+02:00
 draft: false
 summary: "Given the `head` of a singly linked list, reverse the list, and return the reversed list."
-featuredImage: "preview.png"
-images:
-  - "leetcode24.png"
+resources:
+  - name: "featured-image"
+    src: "preview.png"
 tags:
   - "leetcode"
   - "iterative"

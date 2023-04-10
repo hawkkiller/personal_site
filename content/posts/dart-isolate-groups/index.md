@@ -2,11 +2,11 @@
 title: "Dart isolates and Isolate Groups"
 date: 2023-03-18T19:23:51+01:00
 summary: "What are Isolate Groups and how they improve performance?"
-featuredImage: "images/isolate.jpg"
 description: "What are Isolate Groups and how they improve performance? I decided to write a brief article on the topic, which I hope will help others understand the concept and its benefits."
 tags: ["Dart", "Flutter", "Isolate", "Isolate Groups"]
-images:
-    - "images/isolate.jpg"
+resources:
+  - name: "featured-image"
+    src: "images/isolate.jpg"
 ---
 
 ## Introduction

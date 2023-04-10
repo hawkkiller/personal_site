@@ -3,9 +3,9 @@ title: "Two Sum 1"
 date: 2023-04-08T10:19:26+02:00
 draft: false
 summary: "Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target."
-featuredImage: "preview.png"
-images:
-  - "preview.png"
+resources:
+  - name: "featured-image"
+    src: "preview.png"
 tags:
   - "leetcode"
   - "easy"
