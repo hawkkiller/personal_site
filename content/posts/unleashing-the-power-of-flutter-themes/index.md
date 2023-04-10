@@ -1,7 +1,7 @@
 ---
 title: "Unleashing the power of Flutter themes"
-date: 2023-04-10T17:27:13+0200
-draft: true
+date: 2023-04-10T22:38:59+0200
+draft: false
 summary: "A few months ago, I embarked on a journey exploring the mystical land of Flutter themes. Like any adventurer worth their salt, I started with the basics: default themes, global colour variables, and theme extensions.
 Unfortunately, they were all fraught with cons! But fear not, dear reader, for I am about to reveal the approach that I have used for the past few months and it has brought great happiness to my coding lif"
 resources:
