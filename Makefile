@@ -1,2 +1,2 @@
 serve:
-	@hugo server --disableFastRender --port 7709
+	@hugo server --disableFastRender --buildDrafts --port 7709

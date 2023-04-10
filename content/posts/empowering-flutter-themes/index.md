@@ -21,4 +21,12 @@ Unfortunately, they were all fraught with cons! But fear not, dear reader, for I
 
 ## What is a theme?
 
-A theme is a collection of colours, fonts, and other visual properties that are used to style a widget. In Flutter, themes are defined in the `ThemeData` class. The `ThemeData` class is a collection of properties that are used to style the widgets. For example, `ThemeData` has a property for setting a theme for about each widget in the Material and Flutter library. However, it is 
+A theme is a collection of colours, fonts, and other visual properties that are used to style a widget. In Flutter, themes are defined in the `ThemeData` class. The `ThemeData` class is a collection of properties that are used to style the widgets. For example, `ThemeData` has a property for setting a theme for about each widget in the Material and Flutter library. Here below I want to compare different approaches to theme management in Flutter.
+
+## Default Themes
+
+The first approach is to manually set the theme for each widget. This approach is the most straightforward and is the default approach that Flutter provides. However, this approach has a few cons:
+
+- It is not scalable. If you have a large application, you will have to set the theme for each widget.
+- It is not easy to maintain. If you want to change the theme, you will have to change it in each widget.
+- It is not easy to extend. If you want to add a new theme, you will have to add it to each widget.
