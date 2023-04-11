@@ -260,4 +260,6 @@ And there you have it, fellow adventurer! We've journeyed through the mystical l
 
 ## Conclusion
 
+{{< figure src="images/adventurer.webp" >}}
+
 And there you have it, brave adventurer! We have journeyed through the treacherous lands of Flutter themes, from the humble beginnings of global color variables to the awe-inspiring __Material 3 Theme__. As we have grown and learned, we have left behind the drudgery of boilerplate code, stepping into a world where Flutter widgets inherit styles by default, making our lives as developers infinitely more enjoyable.
