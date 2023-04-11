@@ -1,6 +1,6 @@
 ---
 title: "Unleashing the power of Flutter themes"
-date: 2023-04-10T22:38:59+0200
+date: 2023-04-11T07:15:46+0200
 draft: false
 summary: "A few months ago, I embarked on a journey exploring the mystical land of Flutter themes. Like any adventurer worth their salt, I started with the basics: default themes, global Color variables, and theme extensions.
 Unfortunately, they were all fraught with cons! But fear not, dear reader, for I am about to reveal the approach that I have used for the past few months and it has brought great happiness to my coding lif"
@@ -38,7 +38,8 @@ Text(
 
 Using __color variables__ is the most primitive way to theme your app. You simply define a set of colors in one file and use them throughout your app. This method is as easy as pie, but it comes with a few drawbacks:
 
-- You must set the style for every SDK widget you use. For instance, if you want to change the color of a TextButton, you must set the style property. This can be rather cumbersome and lead to heaps of boilerplate code. This method is not very flexible. You're restricted to using a single set of colors throughout your app. If you want to change the color scheme, you'll have to refactor your entire app.
+- You must set the style for every SDK widget you use. For instance, if you want to change the color of a TextButton, you must set the style property. This can be rather cumbersome and lead to heaps of boilerplate code.
+- This method is not very flexible. You're restricted to using a single set of colors throughout your app. If you want to change the color scheme, you'll have to refactor your entire app.
 - This method doesn't harness the power of Material naming.
 - You'll miss out on the snazzy theme-switching animations.
 
@@ -107,15 +108,26 @@ class ColorsExtension extends ThemeExtension<ColorsExtension> {
   // copywith
   // lerp (for animations)
 }
+
+// and use it in your app
+final themeData = THemeData(
+  extensions: [
+    ColorsExtension(
+      black: Color(0xFF000000),
+      white: Color(0xFFFFFFFF),
+      grey: Color(0xFF9E9E9E),
+    ),
+  ],
+);
 ```
 
-__Theme Extensions__ are another delightful step up from the previous approach. They are akin to __color containers__, but with native support. As a result, you can enjoy those fancy animations when switching between themes at no extra cost. However, this method does require a fair bit of boilerplate code.
+__Theme Extensions__ are another delightful step up from the previous approach. They are akin to __color containers__, but with native support. As a result, you can enjoy those fancy animations when switching between themes at no extra cost. However, this method does require a fair bit of boilerplate code. Let's move to the color system!
 
-## Material color system
+## Material Color System
 
 {{< figure src="https://lh3.googleusercontent.com/G_2Z3lRMdADfzbQyJZcZFAv61QpImyb9OhdmEpu_lAaxgPa01iY-QHPhIgCbkqPQTn9C4Jwzr2OufMQSmPcwJnmSdkmpmix_8HSrctOUjVo=s0" >}}
 
-Material color system is a snazzy naming convention that enables you to define a set of colors used in the Material Design system. This method is highly flexible and makes it a cinch to change your app's color scheme.
+The Material color system, part of Google's Material Design language, offers a collection of guidelines and best practices for utilizing colors in your app. This highly adaptable system simplifies the process of crafting your app's color scheme while ensuring a visually appealing and consistent appearance.
 
 There's a treasure trove of theory on the Material color system, but we won't dive too deep here. In a nutshell, it's all about deterministic color definitions:
 
@@ -238,14 +250,14 @@ const lightColorScheme = ColorScheme(
 // dark ... 
 ```
 
-Now we can use the Material 3 Theme in our project, and everything is ready to go! The best part is that Flutter Widgets from the material library use this theme by default. So, we don't need to define the style for every widget. We just need to define the color scheme, and the rest is handled by Flutter. I've concocted a small showcase app that employs this approach. You can find it [here](https://github.com/hawkkiller/theme_example).
+Now we can use the __Material 3 Theme__ in our project, and everything is ready to go! The best part is that Flutter Widgets from the material library use this theme by default. So, we don't need to define the style for every widget. We just need to define the color scheme, and the rest is handled by __Flutter__. I've concocted a small showcase app that employs this approach. You can find it [here](https://github.com/hawkkiller/theme_example).
 
 {{< admonition type=note >}}
-Keep in mind that only widgets from the material library inherit colors from this theme. Thus, widgets like Container or Scaffold will not use `backgroundColor` by default.
+__Keep in mind__ that only widgets from the material library inherit colors from this theme. Thus, widgets like Container or Scaffold will not use `backgroundColor` by default.
 {{</ admonition >}}
 
-And there you have it, fellow adventurer! We've journeyed through the mystical land of Flutter themes and discovered the secrets to a coding life filled with joy and satisfaction. Happy theming!
+And there you have it, fellow adventurer! We've journeyed through the mystical land of Flutter themes and discovered the secrets to a coding life filled with joy and satisfaction. __Happy theming__!
 
 ## Conclusion
 
-And there you have it, brave adventurer! We have journeyed through the treacherous lands of Flutter themes, from the humble beginnings of global color variables to the awe-inspiring Material 3 Theme. As we have grown and learned, we have left behind the drudgery of boilerplate code, stepping into a world where Flutter widgets inherit styles by default, making our lives as developers infinitely more enjoyable.
+And there you have it, brave adventurer! We have journeyed through the treacherous lands of Flutter themes, from the humble beginnings of global color variables to the awe-inspiring __Material 3 Theme__. As we have grown and learned, we have left behind the drudgery of boilerplate code, stepping into a world where Flutter widgets inherit styles by default, making our lives as developers infinitely more enjoyable.
